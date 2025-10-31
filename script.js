@@ -18,7 +18,7 @@ numeroSecreto = geradorNumero(1, 100);
 console.log(numeroSecreto);
 
 let tentativas = 0
-let limiteTentativas = 2
+let limiteTentativas = 10
 
 function verificaNumero() {
   tentativas++;
