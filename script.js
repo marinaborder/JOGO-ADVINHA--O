@@ -28,22 +28,22 @@ function verificaNumero() {
 
   if (tentativas >= limiteTentativas &&! (palpite === numeroSecreto)) {
     console.log(tentativas)
-    alert('Suas tentativas acabaram!');
+    alert('Suas tentativas acabaram! 😩');
     window.location.reload(true)
   }
 
   if(palpite === numeroSecreto){
-    alert ("Parabéns!");
+    alert ("Parabéns! Você acertou o Número Secreto 🤩");
     window.location.reload(true)
     } else {
-    message.textContent = "Numero errado, tente novamente";
+    message.textContent = "Número errado, tente novamente 👀";
     chuteInput.value = '';
   }
 
   if(palpite < numeroSecreto){
-   dica.textContent = "O número secreto é maior";
+   dica.textContent = "O número secreto é maior 🤔";
   } else {
-    dica.textContent = "O número secreto é menor";
+    dica.textContent = "O número secreto é menor 🤔";
   }
 }
 
