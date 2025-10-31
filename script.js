@@ -26,7 +26,7 @@ function verificaNumero() {
   let palpite = Number(chuteInput.value);
   console.log(palpite === numeroSecreto);
 
-  if (tentativas > limiteTentativas) {
+  if (tentativas >= limiteTentativas &&! (palpite === numeroSecreto)) {
     console.log(tentativas)
     alert('Suas tentativas acabaram!');
     window.location.reload(true)
@@ -45,6 +45,10 @@ function verificaNumero() {
   } else {
     dica.textContent = "O número secreto é menor";
   }
+}
+
+function reload(){
+  window.location.reload(true)
 }
 
 
