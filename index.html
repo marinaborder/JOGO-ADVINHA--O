@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Adivinhação</title>
+</head>
+<body>
+  <div class="container">
+     <h1>Jogo da Adivinhação</h1>
+     <p class="regras">
+        Tente adivinhar o número secreto que está entre 1 e 100. <br> Você tem 10 tentativas!
+      </p>
+      <div class="input-area">
+        <p id="message" class="mensagem-input">Insira um palpite e clique em Chutar!</p>
+        <p id="dica"></p>
+        <input type="number" id="chute-input" min="1" max="100" placeholder="Digite seu palpite (1-100)">
+        <button id="botao-chutar" onclick="verificaNumero()">Chutar</button>
+      </div>
+      
+      <p id="tentativas">Tentativas restantes: 10</p> 
+      <button id="botao-restaurar" class="restaurar">Jogar Novamente<button>
+  </div>
+ <script src="script.js"></script>
+</body>
+</html>
